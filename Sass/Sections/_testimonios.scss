@@ -1,0 +1,104 @@
+#testimonios{
+      .testimonios-carrusel{      
+            line-height: 1.5;
+            padding-left: 15px;
+            padding-right: 15px;     
+            position: relative;
+            width: 100%;
+            
+            .testimonios-cards{
+                  display: block;
+                  overflow: hidden;
+                  position: relative;
+                  text-align: left;
+                  width: 100%;
+                  z-index: 1;
+                  
+                  .testimonios-item{
+                        text-align: center;
+
+                        @include desktop{
+                              align-content: center;
+                              align-items: flex-start;
+                              display: flex;
+                              justify-content: center;
+                        }
+
+                        .testimonios-img{
+                              border-radius: $redondo;
+                              width: 120px;
+                              height:auto;
+                              border: 4px solid $blanco;
+                              overflow: hidden;
+                              border: 4px solid $blanco;
+                              border-radius: $redondo;
+                              height: auto;
+                              overflow: hidden;
+                              width: 120px;
+
+                              @include desktop{
+                                    margin-top: 15px;
+                              }
+                        }
+                        
+                        .testimonios-text{
+                              padding: 0 5px;
+                              
+                              @include desktop{
+                                    text-align: left;
+                                    width: 50%;
+                              }
+
+                              .testimonios-subtitle{
+                                    font-family: $titulo;
+                              }
+
+                              h4{
+                                    font-size: 20px;
+                                    margin: 10px 0 5px 0;
+                              }
+
+                              h5{
+                                    color: $grisclaro;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    margin: 0 0 15px 0;
+                              }
+
+                              p{
+                                    color: $gris;
+                                    font-size: 16px;
+                                    font-style: italic;
+                                    margin-bottom: 15px;
+                              }
+                        }
+                  }
+            }
+                  .testimonios-botones{
+                  margin-top: 5px;
+                  margin-bottom: 5px;
+                  text-align: center;
+                  
+                  button{
+                        background-color: $grisclaro;
+                        border: none;
+                        border-radius: $redondo;
+                        cursor: pointer;
+                        height: 12px;
+                        margin: 0 5px;
+                        padding: 0;
+                        width: 12px;
+
+                        @include desktop{
+                              &:hover{
+                                    background-color: $azulmedio;
+                              }
+                        }
+                  }
+
+                  .testimonios-boton{
+                        background-color: $azulmedio;
+                  }
+            }
+      }
+}

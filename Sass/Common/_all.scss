@@ -1,0 +1,19 @@
+/*
+    La intencion estuvo muy bien, pero la idea del "all" es que solo tenga todo lo que esta en la carpeta misma. O sea, aca
+    existiria solo el import de mixins y de variables.
+    Cada carpeta tendria su propio "all" y eso lo puedo llamar desde mi archivo principal
+*/
+@import 'variables';
+@import 'mixins';
+@import '../Components/componentes';
+@import '../Sections/about';
+@import '../Sections/choose';
+@import '../Sections/clientes';
+@import '../Sections/contacto';
+@import '../Sections/footer';
+@import '../Sections/header';
+@import '../Sections/hero';
+@import '../Sections/portafolio';
+@import '../Sections/servicios';
+@import '../Sections/team';
+@import '../Sections/testimonios';

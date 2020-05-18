@@ -1,0 +1,171 @@
+#contact{
+      @include desktop{
+            height: 600px;
+      }
+
+      .contact-info{
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+
+            @include desktop{
+                  position: relative;
+            }
+            
+            .contact-map{
+                  overflow: hidden;
+                  padding-bottom: 400px;
+                  padding-top: 30px;
+                  position: relative;
+                  
+                  iframe{
+                        border: 0;
+                        height: 100%;
+                        left: 0;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        
+                        @include desktop{
+                              height: 310px;
+                              max-width: 50%;
+                              width: 610px;
+                        }
+                  }
+            }
+            
+            .contact-address-form{
+                  @include desktop{
+                        margin-left: 630px;
+                        max-width: 600px;
+                        position: absolute;
+                        top: 0;
+                        width: 50%;
+                  }
+                  
+                  .contact-address{
+                        font-size: 14px;
+                        line-height: 25px;
+                        margin: 10px 5px;
+                        padding: 0 0 25px 0;
+                        position: relative;
+                        
+                        @include desktop{
+                              margin: 10px 0;
+                              padding: 0 5px; 
+                        }
+                        
+                        .fas, .far{
+                              color: $azulmedio;
+                              font-size: 20px;
+                        }
+                        
+                        .contact-text{
+                              position: absolute;
+                              left: 25px;
+                              margin-top: 0px;
+                              top: 0px;
+                              
+                              @include desktop{
+                                    margin-left: 5px;
+                              }
+                        }
+                  }
+                  
+                  .contact-mail{
+                        @include desktop{
+                              left: 250px;
+                              top: -35px;
+                        }
+                  }
+                  
+                  .contact-phone{
+                        @include desktop{
+                              left: 450px;
+                              top: -71px;
+                        }
+                  }
+                  
+                  .contact-form{
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        
+                        .contact-form-item{
+                              background-clip: padding-box;
+                              background-color: $blanco;
+                              border: 1px solid $grisclaro;
+                              box-shadow: none;
+                              color: $gris;
+                              display: block;
+                              font-family: $parrafo;
+                              font-size: 14px;
+                              height: 40px;
+                              line-height: 1.5;
+                              margin: 5px;
+                              padding: 5px 10px;
+                              width: 100%;
+                              
+                              &::placeholder{
+                                    color: $grisazul;
+                              }
+                              
+                              @include desktop{
+                                    position: absolute;
+                              }
+                        }
+                        
+                        #name{
+                              @include desktop{
+                                    top: 60px;
+                                    width: 48%;
+                              }
+                        }
+                        
+                        #email{
+                              @include desktop{
+                                    left: 315px;
+                                    top: 60px;
+                                    width: 48%;
+                              }
+                        }
+                        
+                        #subject{
+                              @include desktop{
+                                    top: 120px;
+                                    width: 100%;
+                              }
+                        }
+                        
+                        #message{
+                              @include desktop{
+                                    top: 180px;
+                              }
+                        }
+                        
+                        textarea{
+                              height: 120px !important;
+                              overflow: auto;
+                              resize: vertical;
+                        }
+                        
+                        .boton{
+                              font-family: $parrafo;
+                              font-weight: 400;
+                              letter-spacing: normal;
+                              
+                              @include desktop{
+                                    
+                                    left: 200px;
+                                    position: absolute;
+                                    top: 325px;
+                                    
+                                    &:hover{
+                                          background-color: $azulbrillante;
+                                          border-color: $azulbrillante;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}

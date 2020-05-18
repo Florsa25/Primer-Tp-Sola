@@ -1,0 +1,24 @@
+@import 'common/all';
+
+//Esto es para que todas las cajas sean de tipo border-box y no content box que es el predeterminado
+html {
+    box-sizing: border-box;
+}
+/*
+    Lo ideal es tratar de evitar el uso de *
+    Porque no es especifico.
+*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+//Los estilos básicos todo el body
+body {
+    color: $texto;
+    font-family: $parrafo;
+    font-size: 15px;
+    //Esto quita el margen blanco que pone el browser de modo predeterminado
+    margin: 0;
+}

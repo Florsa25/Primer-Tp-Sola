@@ -1,0 +1,82 @@
+// La cabecera de cada sección
+.section-header{
+    background-size: contain;
+    display: block;
+    padding: 60px 15px 30px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+//Este es el título de cada sección que es igual en todas, excepto en Why Choose Us porque el fondo es azul
+.section-title{
+    font-family: $titulo;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+//B O T O N E S - - - - -
+//Estilo de botón básico centrado en mobile
+.boton{
+    border: 2px solid;
+    border-radius: $bordemedio;
+    color: $blanco;
+    display: block !important;
+    font-family: $titulo;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 14px;
+    margin: 0 auto 20px auto;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    width: 170px;
+}
+
+//Botón de fondo y borde azul
+.b-azul{
+    background-color: $azulmedio;
+    border-color: $azulmedio;
+}
+
+//Botón sin fondo (básico) y borde blanco
+.b-blanco{
+    border-color: $blanco;
+}
+
+//Fondo azul claro y la sombra interna para secciones Services y Testimonials
+.softblue-section{
+    background-color: $servicesfondo;
+    box-shadow: $sombraseccion;
+    height: auto;
+    padding: 10px 5px 50px;
+ } 
+
+ //El botón de volver arriba
+ .back-to-top{
+     background-color: $azulmedio;
+     border-radius: $redondo;
+     bottom: 10px;
+     color: $blanco;
+     font-size: 20px;
+     height: 45px;
+     line-height: 2;
+     position: fixed;
+     right: 10px;
+     text-align: center;
+     transition: background-color 0.5s;
+     width: 45px;
+     z-index: 50;
+
+     &:hover{
+        background-color: $azulbrillante;
+         outline: none;
+         text-decoration: none;
+     }
+ }

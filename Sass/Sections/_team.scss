@@ -1,0 +1,98 @@
+/*
+    Quedo pendiente cambiar el color de la fuente del hover de cada circulo
+*/
+@import '../Common/variables';
+#team {
+    background: white;
+
+    .texto-batmans {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h3 {
+            font-size: 30px;
+            font-family: $titulo;
+            text-align: center;
+        }
+        p {
+            font-family: $parrafo;
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+    .todas-las-img-team {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        figure {
+            margin: 0px 0px 20px;
+
+            display: inline-block;
+            position: relative;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            img {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                margin: 0;
+                padding: 0;
+            }
+            figcaption {
+                transition: all 0.3s;
+                overflow: hidden;
+                display: none;
+                position: absolute;
+                left: 0px;
+                bottom: -300px;
+                width: 300px;
+                height: 300px;
+                padding-top: 20%;
+                border-radius: 50%;
+                opacity: 0.7;
+                background: rgba(33, 92, 151, 0.877);
+                h4 {
+                    font-family: $titulo;
+                    font-size: 20px;
+                    margin-bottom: 2px;
+                    color: #000;
+                    text-align: center;
+                    opacity: 1;
+                }
+                p {
+                    color: #000;
+                    font-family: $parrafo;
+                    font-size: 16px;
+                    margin-top: 3px;
+                    text-align: center;
+                    opacity: 1;
+                }
+                span {
+                    color: #000;
+                    opacity: 1;
+                    font-size: 20px;
+                    display: block;
+                    margin: auto 33%;
+                    span:hover .fa {
+                        color: rgba(75, 34, 253, 0.959);
+                    }
+                }
+            }
+        }
+    }
+    figure:hover figcaption {
+        bottom: 0px;
+        display: block;
+        transform: none;
+    }
+}
