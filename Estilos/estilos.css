@@ -1,3 +1,8 @@
+/*
+    La intencion estuvo muy bien, pero la idea del "all" es que solo tenga todo lo que esta en la carpeta misma. O sea, aca
+    existiria solo el import de mixins y de variables.
+    Cada carpeta tendria su propio "all" y eso lo puedo llamar desde mi archivo principal
+*/
 @keyframes bounce {
   0%, 20%, 60%, 100% {
     -webkit-transform: translateY(0);
@@ -294,6 +299,20 @@
   text-align: center;
 }
 
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
 #clientes {
   background: #ecf5ff;
   margin: 0px;
@@ -696,20 +715,48 @@
   font-weight: bold;
 }
 
-
+/*
+    El header seria el que deberia tener el position: fixed, y junto a eso un 
+    z-index alto, de forma que no lo pisen otros elementos.
+*/
 #header {
   width: 100%;
   height: 60px;
 }
-#header .contenedor-header {
+
+.contenedor-header {
   position: fixed;
   background: #ffffff;
   left: 0px;
   top: 0px;
   height: 80px;
   width: 100%;
+  z-index: 10000;
 }
-#header label {
+
+.contenedor-menu {
+  width: 50%;
+  margin-left: auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  background: #ffffff;
+  color: #004289;
+  text-decoration: none;
+  padding: 10 px 15px;
+  display: block;
+}
+
+nav > li {
+  position: relative;
+  display: inline-block;
+}
+
+label {
   position: fixed;
   padding: 0px 30px;
   width: 100%;
@@ -721,90 +768,10 @@
   text-align: right;
 }
 
-@media (min-width: 720px) {
-  #header label {
-    display: none;
-  }
-}
-#header #check {
-  display: none;
-}
-#header #check:checked ~ .menu {
-  display: block;
-  width: 60%;
-}
-#header .menu {
-  color: rgba(5, 80, 145, 0.904);
-  overflow: hidden;
-  width: 0px;
-  height: 100vh;
-  position: fixed;
-  text-align: left;
-  transition: all 0.3s;
-}
-@media (min-width: 720px) {
-  #header .menu {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
-    width: 100%;
-    height: 80px;
-    top: 0px;
-    text-align: right;
-    color: rgba(5, 80, 145, 0.904);
-  }
-}
-#header .menu li {
-  color: white;
-  padding: 15px;
-  font-size: 20px;
-  list-style: none;
-  display: block;
-}
-@media (min-width: 720px) {
-  #header .menu li {
-    position: relative;
-    display: inline-block;
-    color: rgba(5, 80, 145, 0.904);
-  }
-}
-#header .menu li a {
-  color: white;
-  text-decoration: none;
-}
-@media (min-width: 720px) {
-  #header .menu li a {
-    color: rgba(5, 80, 145, 0.904);
-    display: block;
-    padding: 15px 20px;
-  }
-  #header .menu li a:hover {
-    color: #007bff;
-    background: #003166;
-    transition: all 0.3s;
-  }
-}
-@media (min-width: 720px) {
-  #header .submenu {
-    position: absolute;
-    background: white;
-    display: none;
-    padding: 15px 20px;
-  }
-  #header .submenu:hover {
-    display: block;
-  }
-}
-
-.logo-header {
-  width: 80px;
-  top: 30px;
-  padding-top: 20px;
-}
-
+/*
+El hero se ve pisado por el header por lo que le faltaria
+cerca de 80px de margin-top en mobile.
+*/
 #hero {
   background-color: #1445b3;
   background-size: contain;
@@ -874,6 +841,9 @@
   }
 }
 
+/*
+    Quedo pendiente el hover de esta seccion.
+*/
 #portfolio {
   padding: 0 15px;
   position: relative;
@@ -1105,6 +1075,9 @@
   text-align: left;
 }
 
+/*
+    Quedo pendiente cambiar el color de la fuente del hover de cada circulo
+*/
 #team {
   background: white;
 }
@@ -1296,6 +1269,10 @@ html {
   box-sizing: border-box;
 }
 
+/*
+    Lo ideal es tratar de evitar el uso de *
+    Porque no es especifico.
+*/
 *,
 *:before,
 *:after {

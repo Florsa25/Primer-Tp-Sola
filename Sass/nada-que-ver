@@ -1,0 +1,71 @@
+   #check {
+        display: none;
+    }
+    #check:checked ~ .menu {
+        display: block;
+        width: 60%;
+    }
+    .contenedor-menu{
+        width: 50%;
+        
+    }
+    .menu {
+        color: rgba(5, 80, 145, 0.904);
+        overflow: hidden;
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        text-align: left;
+        transition: all 0.3s;
+        @include desktop {
+            display: flex;
+            justify-content: flex-start;
+            align-items: left;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow: hidden;
+            width: 50%;
+            height: 80px;
+            top: 0px;
+            text-align: right;
+            color: rgba(5, 80, 145, 0.904);
+        }
+        li {
+            color: white;
+            padding: 15px;
+            font-size: 15px;
+            list-style: none;
+            display: block;
+            @include desktop {
+                position: relative;
+                display: inline-block;
+                color: rgba(5, 80, 145, 0.904);
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                @include desktop {
+                    color: rgba(5, 80, 145, 0.904);
+                    display: block;
+                    padding: 15px 20px;
+                    &:hover {
+                        color: $azulmedio;
+                        background: $azuloscuro;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    .submenu {
+        @include desktop {
+            position: absolute;
+            background: white;
+            display: none;
+            padding: 15px 20px;
+            &:hover {
+                display: block;
+            }
+        }
+    }
+}
