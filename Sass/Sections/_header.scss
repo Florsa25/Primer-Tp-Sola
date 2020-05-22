@@ -4,7 +4,7 @@ body{
     padding: 0px;
 }
 
-#header{
+.contenedor-header{
     width: 100%;
     height: 50px;
     z-index: 1000000;
@@ -12,23 +12,21 @@ body{
     background: #ffff;
     font-size: 12px;
     margin: auto;
-    padding: 20px 0px;
+    padding: 20px 0px;/*cambiar medidas*/
     display: flex;
     flex-direction: row;
-}
-.contenerdor-header{
-    width: 100%;
-    background: #fff;
-   
-}
+    margin-left: auto;
+    margin-right: auto;
+} 
+
 /*--------------Estilos generales del menu------------------*/
 .contenedor-menu{
    
     float: right;
+    justify-content: flex-end;
 }
-nav ul{
+.menu{
     list-style: none;
-    padding: 15px;
     margin: 0px;
 
 }
@@ -40,36 +38,28 @@ nav li ul{
     position: absolute;
 }
 
-nav ul li a{
+.menu li a{
     text-decoration: none;
     color: $menutexto;
     display: block;
     padding: 0 1.5em;
 }
 
-nav ul li a:hover{
+.menu li a:hover{
     color: $azulmedio;
     background: #fff;
     transition: .5s;
 }
 
-nav li ul{
-    display: none;
-}
-
-nav li:hover > ul{
-    display: block;
-    transition: .3s;
-}
 /*primer nivel*/
-nav > ul{
+.menu {
     background: #fff;
     color: $menutexto;
     display: table;
     width: 100%;
    
 }
-nav > ul >li /*trabajo asi solo con el ul hijo de nav, es decir que el selector > solo trabaja con hijos directos de */{
+.menu >li /*trabajo asi solo con el ul hijo de nav, es decir que el selector > solo trabaja con hijos directos de */{
 float: left;
 }
 
@@ -80,20 +70,48 @@ nav li li{
     width: 115px;
     height: 30px;
     padding: 0px;
+    max-height: 0px;
+    transition: all .8s;
+    overflow: hidden;
 }
-nav >ul>li>ul{
-    top:95%;
-    left:-15%;
+nav li:hover > ul>li{
+ max-height: 15000px;
+ overflow: visible;
+}
+
+.menu >li>ul{
+    top:100%;
+    left: -40%;
 }
 
 /*tercer nivel*/
 
-nav ul ul ul{
-    left: 87%;
-    top: -55%;
+.menu ul ul{
+left: 65%;
+top: 0%;
+
 }
 
 /** Acomodando el logo y el menu de navegacion *************/
 .logo-header{
     width: 50%;
+    text-align: center;
+    float: left;
+    padding-left: 15px;
+}
+.logo-header img{
+    max-height: 30px;
+    padding: 5px;
+    margin: auto
+}
+.logo-header >input{
+    display: none;
+}
+.logo-header> label{
+    display: none;
+}
+
+#check:checked ~ .menu {
+    display: block;
+    width: 60%;
 }

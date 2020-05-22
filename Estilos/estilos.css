@@ -208,7 +208,7 @@
   align-items: stretch;
   flex-direction: column;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #choose {
     display: flex;
     justify-content: center;
@@ -233,7 +233,7 @@
   font-size: 20px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   .tarjetas {
     display: flex;
     flex-direction: row;
@@ -262,7 +262,7 @@
 .tarjeta h5 {
   font-size: 20px;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   .tarjeta {
     width: 25%;
     height: 400px;
@@ -368,7 +368,7 @@
   display: flex;
   justify-content: center;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #clientes .clientes-img {
     width: 25%;
     display: flex;
@@ -391,7 +391,7 @@
   transition: 0.3s;
   transform: scale(1.3);
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #clientes .clientes-img img {
     display: flex;
     justify-content: center;
@@ -408,7 +408,7 @@
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact {
     height: 600px;
   }
@@ -418,7 +418,7 @@
   padding-right: 15px;
   width: 100%;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info {
     position: relative;
   }
@@ -437,14 +437,14 @@
   top: 0;
   width: 100%;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-map iframe {
     height: 310px;
     max-width: 50%;
     width: 610px;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form {
     margin-left: 630px;
     max-width: 600px;
@@ -460,7 +460,7 @@
   padding: 0 0 25px 0;
   position: relative;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-address {
     margin: 10px 0;
     padding: 0 5px;
@@ -476,18 +476,18 @@
   margin-top: 0px;
   top: 0px;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-address .contact-text {
     margin-left: 5px;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-mail {
     left: 250px;
     top: -35px;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-phone {
     left: 450px;
     top: -71px;
@@ -515,31 +515,31 @@
 #contact .contact-info .contact-address-form .contact-form .contact-form-item::placeholder {
   color: #556877;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-form .contact-form-item {
     position: absolute;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-form #name {
     top: 60px;
     width: 48%;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-form #email {
     left: 315px;
     top: 60px;
     width: 48%;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-form #subject {
     top: 120px;
     width: 100%;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-form #message {
     top: 180px;
   }
@@ -554,7 +554,7 @@
   font-weight: 400;
   letter-spacing: normal;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #contact .contact-info .contact-address-form .contact-form .boton {
     left: 200px;
     position: absolute;
@@ -577,7 +577,7 @@
   text-align: start;
   width: 100%;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #footer .footer-flex {
     display: flex;
     justify-content: space-between;
@@ -601,12 +601,12 @@
 #footer a:hover {
   color: #3395ff;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #footer .footer-info, #footer .footer-newsletter {
     width: 30%;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #footer .footer-links, #footer .footer-contact {
     width: 20%;
   }
@@ -661,7 +661,7 @@
   transition: 0.3s;
   width: 36px;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #footer .footer-contact .footer-socialmedia .socialmedia:hover {
     background: #3395ff;
   }
@@ -697,7 +697,7 @@
   transition: 0.3s;
   width: 30%;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #footer .footer-newsletter form input[type=submit]:hover {
     background-color: #3395ff;
   }
@@ -721,7 +721,7 @@ body {
   padding: 0px;
 }
 
-#header {
+.contenedor-header {
   width: 100%;
   height: 50px;
   z-index: 1000000;
@@ -730,23 +730,21 @@ body {
   font-size: 12px;
   margin: auto;
   padding: 20px 0px;
+  /*cambiar medidas*/
   display: flex;
   flex-direction: row;
-}
-
-.contenerdor-header {
-  width: 100%;
-  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--------------Estilos generales del menu------------------*/
 .contenedor-menu {
   float: right;
+  justify-content: flex-end;
 }
 
-nav ul {
+.menu {
   list-style: none;
-  padding: 15px;
   margin: 0px;
 }
 
@@ -759,37 +757,28 @@ nav li ul {
   position: absolute;
 }
 
-nav ul li a {
+.menu li a {
   text-decoration: none;
   color: #004289;
   display: block;
   padding: 0 1.5em;
 }
 
-nav ul li a:hover {
+.menu li a:hover {
   color: #007bff;
   background: #fff;
   transition: 0.5s;
 }
 
-nav li ul {
-  display: none;
-}
-
-nav li:hover > ul {
-  display: block;
-  transition: 0.3s;
-}
-
 /*primer nivel*/
-nav > ul {
+.menu {
   background: #fff;
   color: #004289;
   display: table;
   width: 100%;
 }
 
-nav > ul > li {
+.menu > li {
   float: left;
 }
 
@@ -800,22 +789,52 @@ nav li li {
   width: 115px;
   height: 30px;
   padding: 0px;
+  max-height: 0px;
+  transition: all 0.8s;
+  overflow: hidden;
 }
 
-nav > ul > li > ul {
-  top: 95%;
-  left: -15%;
+nav li:hover > ul > li {
+  max-height: 15000px;
+  overflow: visible;
+}
+
+.menu > li > ul {
+  top: 100%;
+  left: -40%;
 }
 
 /*tercer nivel*/
-nav ul ul ul {
-  left: 87%;
-  top: -55%;
+.menu ul ul {
+  left: 65%;
+  top: 0%;
 }
 
 /** Acomodando el logo y el menu de navegacion *************/
 .logo-header {
   width: 50%;
+  text-align: center;
+  float: left;
+  padding-left: 15px;
+}
+
+.logo-header img {
+  max-height: 30px;
+  padding: 5px;
+  margin: auto;
+}
+
+.logo-header > input {
+  display: none;
+}
+
+.logo-header > label {
+  display: none;
+}
+
+#check:checked ~ .menu {
+  display: block;
+  width: 60%;
 }
 
 /*
@@ -830,7 +849,7 @@ cerca de 80px de margin-top en mobile.
   position: relative;
   width: 100%;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #hero {
     display: flex;
     flex-direction: row-reverse;
@@ -844,7 +863,7 @@ cerca de 80px de margin-top en mobile.
   margin: 0 auto;
   width: 300px;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #hero img {
     width: 500px;
   }
@@ -855,7 +874,7 @@ cerca de 80px de margin-top en mobile.
   font-weight: 700;
   text-align: center;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #hero div h2 {
     font-size: 42px;
     text-align: left;
@@ -867,25 +886,25 @@ cerca de 80px de margin-top en mobile.
   text-decoration: underline;
   width: 100%;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #hero div .boton {
     display: inline !important;
     margin: 0 15px 20px 15px;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #hero div .b-azul:hover {
     background-color: transparent;
     border-color: #fff;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #hero div .b-blanco:hover {
     background-color: #007bff;
     border-color: #007bff;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #hero div {
     margin: 0 auto;
   }
@@ -919,7 +938,7 @@ cerca de 80px de margin-top en mobile.
   margin: 15px 0;
   padding: 6px 20px;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #portfolio .portfolio-filters .filters-boton {
     transition: all 0.3s ease-in-out;
   }
@@ -932,7 +951,7 @@ cerca de 80px de margin-top en mobile.
   background-color: #007bff;
   color: #fff;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #portfolio .portolio-allcards {
     display: flex;
     flex-direction: row;
@@ -949,7 +968,7 @@ cerca de 80px de margin-top en mobile.
   position: relative;
   width: 100%;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #portfolio .portfolio-card {
     height: 200px;
     max-height: 250px;
@@ -987,7 +1006,7 @@ cerca de 80px de margin-top en mobile.
   justify-content: center;
   flex-direction: column;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #portfolio .portfolio-card .portfolio-info:hover {
     opacity: 1;
     transition: 0.2s linear;
@@ -1004,13 +1023,13 @@ cerca de 80px de margin-top en mobile.
   color: #fff;
   text-decoration: none;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #portfolio .portfolio-card .portfolio-info h4 a:hover {
     color: #3395ff;
     transition: 0.2s linear;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #portfolio .portfolio-card .portfolio-info h4:hover {
     color: #3395ff;
   }
@@ -1033,7 +1052,7 @@ cerca de 80px de margin-top en mobile.
   text-align: center;
   width: 36px;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #portfolio .portfolio-card .portfolio-info .portfolio-preview:hover {
     background: #3395ff;
   }
@@ -1051,7 +1070,7 @@ cerca de 80px de margin-top en mobile.
 #services #services-cards {
   width: 100%;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #services #services-cards {
     display: flex;
     flex-direction: row;
@@ -1068,7 +1087,7 @@ cerca de 80px de margin-top en mobile.
   padding: 25px 15px 40px 25px;
   position: relative;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #services #services-cards .services-card {
     max-width: 40%;
     transition: all 0.3s ease-in-out;
@@ -1238,7 +1257,7 @@ cerca de 80px de margin-top en mobile.
 #testimonios .testimonios-carrusel .testimonios-cards .testimonios-item {
   text-align: center;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #testimonios .testimonios-carrusel .testimonios-cards .testimonios-item {
     align-content: center;
     align-items: flex-start;
@@ -1258,7 +1277,7 @@ cerca de 80px de margin-top en mobile.
   overflow: hidden;
   width: 120px;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #testimonios .testimonios-carrusel .testimonios-cards .testimonios-item .testimonios-img {
     margin-top: 15px;
   }
@@ -1266,7 +1285,7 @@ cerca de 80px de margin-top en mobile.
 #testimonios .testimonios-carrusel .testimonios-cards .testimonios-item .testimonios-text {
   padding: 0 5px;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #testimonios .testimonios-carrusel .testimonios-cards .testimonios-item .testimonios-text {
     text-align: left;
     width: 50%;
@@ -1306,7 +1325,7 @@ cerca de 80px de margin-top en mobile.
   padding: 0;
   width: 12px;
 }
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   #testimonios .testimonios-carrusel .testimonios-botones button:hover {
     background-color: #007bff;
   }
